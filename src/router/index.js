@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import currencyPair from '@/components/currencyPair/currencyPair'
 
 Vue.use(Router)
 
@@ -8,13 +8,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },
-    {
-      path: '/currencyPair',
       name: 'currencyPair',
-      component: () => import('@/components/currencyPair/currencyPair')
+      component: currencyPair
     },
     {
       path: '/successfulPage',
